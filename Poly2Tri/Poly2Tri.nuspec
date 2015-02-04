@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>https://code.google.com/p/poly2tri/people/list</authors>
+    <owners>https://code.google.com/p/poly2tri/people/detail?u=113158675721513411716</owners>
+    <licenseUrl>http://opensource.org/licenses/BSD-3-Clause</licenseUrl>
+    <projectUrl>https://code.google.com/p/poly2tri/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright></copyright>
+  </metadata>
+</package>

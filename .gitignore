@@ -1,0 +1,6 @@
+*.user
+
+*.suo
+
+Poly2Tri/bin
+Poly2Tri/obj

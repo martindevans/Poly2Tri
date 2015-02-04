@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A21A4D0A-F045-4736-96A7-0053BEA98410}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Poly2Tri</RootNamespace>
+    <AssemblyName>Poly2Tri</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Triangulation\Delaunay\DelaunayTriangle.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\AdvancingFront.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\AdvancingFrontNode.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\DTSweep.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\DTSweepBasin.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\DTSweepConstraint.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\DTSweepContext.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\DTSweepDebugContext.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\DTSweepEdgeEvent.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\DTSweepPointComparator.cs" />
+    <Compile Include="Triangulation\Delaunay\Sweep\PointOnEdgeException.cs" />
+    <Compile Include="Triangulation\ITriangulatable.cs" />
+    <Compile Include="Triangulation\Orientation.cs" />
+    <Compile Include="P2T.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Triangulation\Polygon\Contour.cs" />
+    <Compile Include="Triangulation\Polygon\Polygon.cs" />
+    <Compile Include="Triangulation\Polygon\PolygonPoint.cs" />
+    <Compile Include="Triangulation\Polygon\PolygonUtil.cs" />
+    <Compile Include="Triangulation\Sets\ConstrainedPointSet.cs" />
+    <Compile Include="Triangulation\Sets\PointSet.cs" />
+    <Compile Include="Triangulation\TriangulationAlgorithm.cs" />
+    <Compile Include="Triangulation\TriangulationConstraint.cs" />
+    <Compile Include="Triangulation\TriangulationContext.cs" />
+    <Compile Include="Triangulation\TriangulationDebugContext.cs" />
+    <Compile Include="Triangulation\TriangulationMode.cs" />
+    <Compile Include="Triangulation\TriangulationPoint.cs" />
+    <Compile Include="Triangulation\Util\PointGenerator.cs" />
+    <Compile Include="Triangulation\Util\PolygonGenerator.cs" />
+    <Compile Include="Triangulation\Util\TriangulationUtil.cs" />
+    <Compile Include="Utility\FixedArray3.cs" />
+    <Compile Include="Utility\MathUtil.cs" />
+    <Compile Include="Utility\Point2D.cs" />
+    <Compile Include="Utility\Point2DList.cs" />
+    <Compile Include="Utility\Rect2D.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
