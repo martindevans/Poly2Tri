@@ -75,7 +75,48 @@ namespace Poly2Tri.Triangulation.Delaunay
             return i;
         }
 
-        
+        internal void CircumCircleCenter(out double x, out double y)
+        {
+            var a = Points.Item0;
+            var b = Points.Item1;
+            var c = Points.Item2;
+
+            var tx = (a.X + c.X) / 2;
+            var ty = (a.Y + c.Y) / 2;
+
+            var vx = (b.X + c.X) / 2;
+            var vy = (b.Y + c.Y) / 2;
+
+            double ux, uy, wx, wy;
+
+            if (a.X == c.X)
+            {
+                ux = 1;
+                uy = 0;
+            }
+            else
+            {
+                ux = (c.Y - a.Y) / (a.X - c.X);
+                uy = 1;
+            }
+
+            if (b.X == c.X)
+            {
+                wx = -1;
+                wy = 0;
+            }
+            else
+            {
+                wx = (b.Y - c.Y) / (b.X - c.X);
+                wy = -1;
+            }
+
+            var alpha = (wy * (vx - tx) - wx * (vy - ty)) / (ux * wy - wx * uy);
+
+            x = tx + alpha * ux;
+            y = ty + alpha * uy;
+        }
+
         public int IndexCWFrom(TriangulationPoint p)
         {
             return (IndexOf(p) + 2) % 3;

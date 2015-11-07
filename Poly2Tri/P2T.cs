@@ -29,10 +29,15 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using Poly2Tri.Triangulation;
+using Poly2Tri.Triangulation.Delaunay;
 using Poly2Tri.Triangulation.Delaunay.Sweep;
 using Poly2Tri.Triangulation.Polygon;
+using Poly2Tri.Triangulation.Voronoi;
+using Poly2Tri.Utility;
 
 namespace Poly2Tri
 {
@@ -42,7 +47,7 @@ namespace Poly2Tri
 
         public static void Triangulate(IEnumerable<Polygon> polygons)
         {
-            foreach (Polygon p in polygons)
+            foreach (var p in polygons)
                 Triangulate(p);
         }
 
@@ -55,7 +60,6 @@ namespace Poly2Tri
             }
         }
 
-        
         public static void Triangulate(ITriangulatable t, TriangulationAlgorithm algorithm = DEFAULT_ALGORITHM)
         {
             TriangulationContext tcx = CreateContext(algorithm);

@@ -70,6 +70,8 @@
     <Compile Include="Triangulation\Util\PointGenerator.cs" />
     <Compile Include="Triangulation\Util\PolygonGenerator.cs" />
     <Compile Include="Triangulation\Util\TriangulationUtil.cs" />
+    <Compile Include="Triangulation\Voronoi\EdgeSegment.cs" />
+    <Compile Include="Triangulation\Voronoi\VoronoiExtensions.cs" />
     <Compile Include="Utility\FixedArray3.cs" />
     <Compile Include="Utility\MathUtil.cs" />
     <Compile Include="Utility\Point2D.cs" />

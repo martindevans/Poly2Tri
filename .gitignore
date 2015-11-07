@@ -1,7 +1,13 @@
 *.user
 *.suo
+*.ncrunchsolution
+*.ncrunchproject
+*.cache
 _Resharper.Caches
 _Resharper.Poly2Tri
 
 Poly2Tri/bin
 Poly2Tri/obj
+
+Poly2Tri.Test/bin
+Poly2Tri.Test/obj

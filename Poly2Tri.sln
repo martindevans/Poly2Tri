@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poly2Tri", "Poly2Tri\Poly2Tri.csproj", "{A21A4D0A-F045-4736-96A7-0053BEA98410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poly2Tri.Test", "Poly2Tri.Test\Poly2Tri.Test.csproj", "{F5BF959A-8FBF-4336-BDBD-F76E281AFACA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A21A4D0A-F045-4736-96A7-0053BEA98410}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A21A4D0A-F045-4736-96A7-0053BEA98410}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A21A4D0A-F045-4736-96A7-0053BEA98410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BF959A-8FBF-4336-BDBD-F76E281AFACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BF959A-8FBF-4336-BDBD-F76E281AFACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BF959A-8FBF-4336-BDBD-F76E281AFACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BF959A-8FBF-4336-BDBD-F76E281AFACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
