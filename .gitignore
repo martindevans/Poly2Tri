@@ -1,6 +1,7 @@
 *.user
-
 *.suo
+_Resharper.Caches
+_Resharper.Poly2Tri
 
 Poly2Tri/bin
 Poly2Tri/obj
