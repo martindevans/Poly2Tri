@@ -29,15 +29,10 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using Poly2Tri.Triangulation;
-using Poly2Tri.Triangulation.Delaunay;
 using Poly2Tri.Triangulation.Delaunay.Sweep;
 using Poly2Tri.Triangulation.Polygon;
-using Poly2Tri.Triangulation.Voronoi;
-using Poly2Tri.Utility;
 
 namespace Poly2Tri
 {
